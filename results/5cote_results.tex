@@ -1,0 +1,797 @@
+% --- ArticularyWordRecognition (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{ArticularyWordRecognition: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_articularywordrecognition_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.985 $\pm$ 0.004 & 0.985 $\pm$ 0.004 & 143.7 $\pm$ 18.2 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.983 & 0.983 & 146.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- ArticularyWordRecognition (single_family) ---
+\begin{table}[t]
+\centering
+\caption{ArticularyWordRecognition: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_articularywordrecognition_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+stc\_fedst & 0.989 $\pm$ 0.003 & 0.989 $\pm$ 0.003 & 54.3 $\pm$ 1.7 \\
+drcif\_feddrcif & 0.987 $\pm$ 0.005 & 0.987 $\pm$ 0.005 & 46.6 $\pm$ 0.3 \\
+fedinception[inception] & 0.981 $\pm$ 0.011 & 0.980 $\pm$ 0.011 & 29.7 $\pm$ 5.9 \\
+arsenal\_fed2rc & 0.955 $\pm$ 0.006 & 0.954 $\pm$ 0.005 & 2.5 $\pm$ 0.2 \\
+fedinception[resnet1d] & 0.913 $\pm$ 0.040 & 0.912 $\pm$ 0.040 & 19.1 $\pm$ 3.3 \\
+tde\_feddict & 0.550 $\pm$ 0.000 & 0.539 $\pm$ 0.000 & 12.6 $\pm$ 0.2 \\
+fedavg\_zeropad[inception] & 0.246 $\pm$ 0.056 & 0.160 $\pm$ 0.035 & 40.6 $\pm$ 6.0 \\
+fedavg\_zeropad[resnet1d] & 0.121 $\pm$ 0.040 & 0.062 $\pm$ 0.025 & 21.2 $\pm$ 3.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- BasicMotions (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{BasicMotions: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_basicmotions_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 29.2 $\pm$ 2.5 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 1.000 & 1.000 & 29.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- BasicMotions (single_family) ---
+\begin{table}[t]
+\centering
+\caption{BasicMotions: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_basicmotions_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 2.2 $\pm$ 0.1 \\
+drcif\_feddrcif & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 17.1 $\pm$ 0.2 \\
+tde\_feddict & 1.000 $\pm$ 0.000 & 1.000 $\pm$ 0.000 & 0.9 $\pm$ 0.0 \\
+fedinception[inception] & 0.990 $\pm$ 0.014 & 0.990 $\pm$ 0.014 & 7.7 $\pm$ 0.6 \\
+fedinception[resnet1d] & 0.975 $\pm$ 0.056 & 0.975 $\pm$ 0.056 & 8.5 $\pm$ 1.0 \\
+stc\_fedst & 0.970 $\pm$ 0.027 & 0.970 $\pm$ 0.028 & 2.2 $\pm$ 0.0 \\
+fedavg\_zeropad[inception] & 0.950 $\pm$ 0.050 & 0.950 $\pm$ 0.051 & 6.9 $\pm$ 0.3 \\
+fedavg\_zeropad[resnet1d] & 0.570 $\pm$ 0.099 & 0.516 $\pm$ 0.102 & 5.6 $\pm$ 0.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- Cricket (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{Cricket: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_cricket_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.986 & 0.986 & 386.8 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.978 $\pm$ 0.010 & 0.978 $\pm$ 0.010 & 363.2 $\pm$ 12.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- Cricket (single_family) ---
+\begin{table}[t]
+\centering
+\caption{Cricket: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_cricket_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.986 $\pm$ 0.000 & 0.986 $\pm$ 0.000 & 136.5 $\pm$ 1.3 \\
+fedinception[inception] & 0.981 $\pm$ 0.008 & 0.980 $\pm$ 0.008 & 41.5 $\pm$ 7.3 \\
+stc\_fedst & 0.978 $\pm$ 0.021 & 0.978 $\pm$ 0.021 & 198.7 $\pm$ 2.8 \\
+arsenal\_fed2rc & 0.950 $\pm$ 0.012 & 0.948 $\pm$ 0.013 & 2.5 $\pm$ 0.1 \\
+fedinception[resnet1d] & 0.922 $\pm$ 0.033 & 0.920 $\pm$ 0.034 & 18.7 $\pm$ 4.9 \\
+tde\_feddict & 0.764 $\pm$ 0.000 & 0.752 $\pm$ 0.000 & 16.6 $\pm$ 0.3 \\
+fedavg\_zeropad[inception] & 0.464 $\pm$ 0.107 & 0.374 $\pm$ 0.138 & 38.2 $\pm$ 4.9 \\
+fedavg\_zeropad[resnet1d] & 0.203 $\pm$ 0.081 & 0.119 $\pm$ 0.077 & 11.9 $\pm$ 2.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- DuckDuckGeese (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{DuckDuckGeese: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_duckduckgeese_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.600 & 0.601 & 303.3 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.532 $\pm$ 0.045 & 0.523 $\pm$ 0.047 & 292.5 $\pm$ 8.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- DuckDuckGeese (single_family) ---
+\begin{table}[t]
+\centering
+\caption{DuckDuckGeese: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_duckduckgeese_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc & 0.576 $\pm$ 0.026 & 0.580 $\pm$ 0.028 & 2.9 $\pm$ 0.3 \\
+fedinception[inception] & 0.508 $\pm$ 0.046 & 0.492 $\pm$ 0.058 & 7.6 $\pm$ 1.9 \\
+fedavg\_zeropad[inception] & 0.492 $\pm$ 0.054 & 0.448 $\pm$ 0.072 & 10.4 $\pm$ 1.1 \\
+drcif\_feddrcif & 0.428 $\pm$ 0.023 & 0.419 $\pm$ 0.027 & 33.5 $\pm$ 0.2 \\
+fedinception[resnet1d] & 0.416 $\pm$ 0.036 & 0.380 $\pm$ 0.037 & 6.8 $\pm$ 0.7 \\
+tde\_feddict & 0.400 $\pm$ 0.000 & 0.341 $\pm$ 0.000 & 753.6 $\pm$ 5.6 \\
+stc\_fedst & 0.356 $\pm$ 0.067 & 0.319 $\pm$ 0.081 & 254.9 $\pm$ 7.1 \\
+fedavg\_zeropad[resnet1d] & 0.308 $\pm$ 0.076 & 0.237 $\pm$ 0.088 & 8.7 $\pm$ 1.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- ERing (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{ERing: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_ering_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.974 & 0.974 & 29.9 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.973 $\pm$ 0.009 & 0.973 $\pm$ 0.009 & 37.6 $\pm$ 8.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- ERing (single_family) ---
+\begin{table}[t]
+\centering
+\caption{ERing: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_ering_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.968 $\pm$ 0.006 & 0.968 $\pm$ 0.006 & 15.5 $\pm$ 0.2 \\
+fedinception[inception] & 0.950 $\pm$ 0.017 & 0.950 $\pm$ 0.018 & 9.7 $\pm$ 2.1 \\
+stc\_fedst & 0.936 $\pm$ 0.014 & 0.936 $\pm$ 0.015 & 1.9 $\pm$ 0.1 \\
+arsenal\_fed2rc & 0.869 $\pm$ 0.010 & 0.868 $\pm$ 0.010 & 2.1 $\pm$ 0.1 \\
+tde\_feddict & 0.681 $\pm$ 0.000 & 0.667 $\pm$ 0.000 & 1.0 $\pm$ 0.1 \\
+fedavg\_zeropad[inception] & 0.559 $\pm$ 0.229 & 0.511 $\pm$ 0.266 & 11.5 $\pm$ 3.6 \\
+fedavg\_zeropad[resnet1d] & 0.401 $\pm$ 0.117 & 0.307 $\pm$ 0.136 & 7.6 $\pm$ 2.4 \\
+fedinception[resnet1d] & 0.359 $\pm$ 0.259 & 0.271 $\pm$ 0.305 & 7.6 $\pm$ 3.7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- EigenWorms (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{EigenWorms: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_eigenworms_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.947 & 0.949 & 10458.7 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.942 $\pm$ 0.022 & 0.936 $\pm$ 0.027 & 8367.9 $\pm$ 49.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- EigenWorms (single_family) ---
+\begin{table}[t]
+\centering
+\caption{EigenWorms: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_eigenworms_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.931 $\pm$ 0.013 & 0.927 $\pm$ 0.019 & 9097.1 $\pm$ 125.8 \\
+arsenal\_fed2rc & 0.870 $\pm$ 0.009 & 0.833 $\pm$ 0.013 & 6.1 $\pm$ 0.3 \\
+tde\_feddict & 0.740 $\pm$ 0.000 & 0.670 $\pm$ 0.000 & 381.7 $\pm$ 4.0 \\
+stc\_fedst & 0.711 $\pm$ 0.060 & 0.630 $\pm$ 0.084 & 260.8 $\pm$ 16.6 \\
+fedinception[resnet1d] & 0.522 $\pm$ 0.058 & 0.329 $\pm$ 0.062 & 78.3 $\pm$ 0.8 \\
+fedavg\_zeropad[inception] & 0.427 $\pm$ 0.009 & 0.137 $\pm$ 0.020 & 188.3 $\pm$ 6.9 \\
+fedinception[inception] & 0.421 $\pm$ 0.003 & 0.123 $\pm$ 0.010 & 173.5 $\pm$ 0.9 \\
+fedavg\_zeropad[resnet1d] & 0.279 $\pm$ 0.131 & 0.172 $\pm$ 0.072 & 77.2 $\pm$ 0.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- FaceDetection (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{FaceDetection: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_facedetection_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.674 & 0.673 & 805.9 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.649 $\pm$ 0.011 & 0.648 $\pm$ 0.012 & 892.5 $\pm$ 129.5 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.645 & 0.641 & 2029.4 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.641 & 0.641 & 1104.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- FaceDetection (single_family) ---
+\begin{table}[t]
+\centering
+\caption{FaceDetection: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_facedetection_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[inception] & 0.652 $\pm$ 0.010 & 0.651 $\pm$ 0.010 & 230.6 $\pm$ 12.9 \\
+fedavg\_zeropad[inception] & 0.633 $\pm$ 0.007 & 0.630 $\pm$ 0.009 & 260.2 $\pm$ 38.6 \\
+fedinception[resnet1d] & 0.616 $\pm$ 0.007 & 0.613 $\pm$ 0.012 & 199.9 $\pm$ 24.5 \\
+fedavg\_zeropad[resnet1d] & 0.597 $\pm$ 0.012 & 0.580 $\pm$ 0.023 & 249.2 $\pm$ 20.5 \\
+stc\_fedst & 0.558 $\pm$ 0.014 & 0.557 $\pm$ 0.015 & 221.2 $\pm$ 1.6 \\
+drcif\_feddrcif & 0.548 $\pm$ 0.010 & 0.548 $\pm$ 0.010 & 373.2 $\pm$ 3.4 \\
+arsenal\_fed2rc & 0.511 $\pm$ 0.008 & 0.503 $\pm$ 0.016 & 8.1 $\pm$ 0.2 \\
+tde\_feddict & 0.508 $\pm$ 0.000 & 0.505 $\pm$ 0.000 & 2306.2 $\pm$ 18.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- FingerMovements (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{FingerMovements: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_fingermovements_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.564 $\pm$ 0.021 & 0.560 $\pm$ 0.019 & 80.7 $\pm$ 43.1 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.530 & 0.528 & 58.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- FingerMovements (single_family) ---
+\begin{table}[t]
+\centering
+\caption{FingerMovements: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_fingermovements_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+tde\_feddict & 0.590 $\pm$ 0.000 & 0.587 $\pm$ 0.000 & 9.9 $\pm$ 0.3 \\
+stc\_fedst & 0.572 $\pm$ 0.039 & 0.572 $\pm$ 0.039 & 14.8 $\pm$ 0.4 \\
+fedinception[resnet1d] & 0.524 $\pm$ 0.030 & 0.436 $\pm$ 0.099 & 14.3 $\pm$ 2.5 \\
+arsenal\_fed2rc & 0.516 $\pm$ 0.057 & 0.513 $\pm$ 0.059 & 2.2 $\pm$ 0.3 \\
+fedinception[inception] & 0.512 $\pm$ 0.074 & 0.509 $\pm$ 0.071 & 23.7 $\pm$ 6.4 \\
+drcif\_feddrcif & 0.512 $\pm$ 0.031 & 0.511 $\pm$ 0.031 & 18.8 $\pm$ 0.1 \\
+fedavg\_zeropad[inception] & 0.492 $\pm$ 0.066 & 0.453 $\pm$ 0.091 & 25.8 $\pm$ 12.3 \\
+fedavg\_zeropad[resnet1d] & 0.484 $\pm$ 0.052 & 0.447 $\pm$ 0.043 & 14.5 $\pm$ 1.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- HandMovementDirection (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{HandMovementDirection: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_handmovementdirection_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.514 & 0.442 & 241.1 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.404 $\pm$ 0.031 & 0.353 $\pm$ 0.038 & 238.7 $\pm$ 3.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- HandMovementDirection (single_family) ---
+\begin{table}[t]
+\centering
+\caption{HandMovementDirection: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_handmovementdirection_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[inception] & 0.400 $\pm$ 0.042 & 0.308 $\pm$ 0.036 & 11.0 $\pm$ 0.4 \\
+stc\_fedst & 0.370 $\pm$ 0.042 & 0.323 $\pm$ 0.047 & 169.9 $\pm$ 1.9 \\
+drcif\_feddrcif & 0.357 $\pm$ 0.057 & 0.340 $\pm$ 0.056 & 58.5 $\pm$ 0.3 \\
+fedavg\_zeropad[resnet1d] & 0.343 $\pm$ 0.081 & 0.150 $\pm$ 0.045 & 9.0 $\pm$ 0.3 \\
+fedavg\_zeropad[inception] & 0.292 $\pm$ 0.068 & 0.165 $\pm$ 0.043 & 11.7 $\pm$ 4.5 \\
+arsenal\_fed2rc & 0.287 $\pm$ 0.017 & 0.286 $\pm$ 0.014 & 2.3 $\pm$ 0.3 \\
+fedinception[resnet1d] & 0.276 $\pm$ 0.064 & 0.212 $\pm$ 0.076 & 9.5 $\pm$ 0.2 \\
+tde\_feddict & 0.149 $\pm$ 0.000 & 0.144 $\pm$ 0.000 & 13.7 $\pm$ 0.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- Heartbeat (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{Heartbeat: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_heartbeat_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.780 & 0.654 & 565.3 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.776 & 0.636 & 331.1 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.771 & 0.600 & 1050.9 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.757 $\pm$ 0.020 & 0.590 $\pm$ 0.082 & 333.1 $\pm$ 8.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- Heartbeat (single_family) ---
+\begin{table}[t]
+\centering
+\caption{Heartbeat: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_heartbeat_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc & 0.773 $\pm$ 0.018 & 0.700 $\pm$ 0.015 & 2.8 $\pm$ 0.1 \\
+drcif\_feddrcif & 0.743 $\pm$ 0.018 & 0.592 $\pm$ 0.045 & 76.0 $\pm$ 0.6 \\
+fedinception[resnet1d] & 0.725 $\pm$ 0.010 & 0.544 $\pm$ 0.068 & 12.5 $\pm$ 1.1 \\
+fedavg\_zeropad[resnet1d] & 0.724 $\pm$ 0.007 & 0.474 $\pm$ 0.084 & 11.2 $\pm$ 1.5 \\
+tde\_feddict & 0.722 $\pm$ 0.000 & 0.419 $\pm$ 0.000 & 190.2 $\pm$ 2.7 \\
+fedavg\_zeropad[inception] & 0.721 $\pm$ 0.005 & 0.439 $\pm$ 0.034 & 11.3 $\pm$ 0.4 \\
+stc\_fedst & 0.715 $\pm$ 0.007 & 0.441 $\pm$ 0.020 & 239.5 $\pm$ 4.1 \\
+fedinception[inception] & 0.695 $\pm$ 0.059 & 0.619 $\pm$ 0.028 & 15.6 $\pm$ 3.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- InsectWingbeat (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{InsectWingbeat: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_insectwingbeat_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.727 & 0.723 & 2615.6 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.701 $\pm$ 0.008 & 0.698 $\pm$ 0.010 & 2572.0 $\pm$ 474.8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- InsectWingbeat (single_family) ---
+\begin{table}[t]
+\centering
+\caption{InsectWingbeat: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_insectwingbeat_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[inception] & 0.683 $\pm$ 0.007 & 0.677 $\pm$ 0.009 & 2148.5 $\pm$ 186.8 \\
+arsenal\_fed2rc & 0.642 $\pm$ 0.006 & 0.642 $\pm$ 0.007 & 22.2 $\pm$ 0.9 \\
+drcif\_feddrcif & 0.607 $\pm$ 0.003 & 0.603 $\pm$ 0.003 & 961.9 $\pm$ 5.1 \\
+fedinception[resnet1d] & 0.518 $\pm$ 0.233 & 0.494 $\pm$ 0.265 & 2728.4 $\pm$ 702.8 \\
+fedavg\_zeropad[resnet1d] & 0.374 $\pm$ 0.028 & 0.362 $\pm$ 0.036 & 3727.0 $\pm$ 431.0 \\
+fedavg\_zeropad[inception] & 0.374 $\pm$ 0.095 & 0.368 $\pm$ 0.101 & 3222.4 $\pm$ 967.6 \\
+tde\_feddict & 0.259 $\pm$ 0.000 & 0.259 $\pm$ 0.000 & 2690.5 $\pm$ 31.9 \\
+stc\_fedst & 0.201 $\pm$ 0.003 & 0.183 $\pm$ 0.004 & 251.3 $\pm$ 2.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- JapaneseVowels (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{JapaneseVowels: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_japanesevowels_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.984 & 0.983 & 71.8 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.980 $\pm$ 0.005 & 0.979 $\pm$ 0.006 & 70.6 $\pm$ 11.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- JapaneseVowels (single_family) ---
+\begin{table}[t]
+\centering
+\caption{JapaneseVowels: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_japanesevowels_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[inception] & 0.974 $\pm$ 0.011 & 0.974 $\pm$ 0.012 & 30.1 $\pm$ 6.0 \\
+drcif\_feddrcif & 0.965 $\pm$ 0.004 & 0.963 $\pm$ 0.004 & 13.3 $\pm$ 0.1 \\
+fedinception[resnet1d] & 0.944 $\pm$ 0.013 & 0.942 $\pm$ 0.013 & 29.0 $\pm$ 7.4 \\
+arsenal\_fed2rc & 0.930 $\pm$ 0.010 & 0.920 $\pm$ 0.009 & 2.3 $\pm$ 0.3 \\
+hivecote2\_centralized & 0.802 $\pm$ 0.028 & 0.783 $\pm$ 0.033 & 7459.4 $\pm$ 129.7 \\
+stc\_fedst & 0.762 $\pm$ 0.010 & 0.746 $\pm$ 0.012 & 3.2 $\pm$ 0.1 \\
+tde\_feddict & 0.622 $\pm$ 0.000 & 0.588 $\pm$ 0.000 & 2.0 $\pm$ 0.0 \\
+fedavg\_zeropad[inception] & 0.284 $\pm$ 0.142 & 0.252 $\pm$ 0.169 & 22.8 $\pm$ 1.1 \\
+fedavg\_zeropad[resnet1d] & 0.248 $\pm$ 0.156 & 0.156 $\pm$ 0.177 & 22.0 $\pm$ 4.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- LSST (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{LSST: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_lsst_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.634 $\pm$ 0.008 & 0.398 $\pm$ 0.027 & 402.3 $\pm$ 106.2 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.617 & 0.421 & 331.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- LSST (single_family) ---
+\begin{table}[t]
+\centering
+\caption{LSST: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_lsst_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.634 $\pm$ 0.003 & 0.411 $\pm$ 0.010 & 134.2 $\pm$ 0.6 \\
+arsenal\_fed2rc & 0.568 $\pm$ 0.006 & 0.433 $\pm$ 0.008 & 3.3 $\pm$ 0.2 \\
+stc\_fedst & 0.522 $\pm$ 0.005 & 0.240 $\pm$ 0.004 & 28.3 $\pm$ 0.4 \\
+tde\_feddict & 0.494 $\pm$ 0.000 & 0.221 $\pm$ 0.000 & 20.4 $\pm$ 0.5 \\
+fedinception[resnet1d] & 0.469 $\pm$ 0.060 & 0.271 $\pm$ 0.077 & 213.9 $\pm$ 36.2 \\
+fedavg\_zeropad[resnet1d] & 0.425 $\pm$ 0.013 & 0.194 $\pm$ 0.015 & 99.9 $\pm$ 5.4 \\
+fedinception[inception] & 0.419 $\pm$ 0.097 & 0.209 $\pm$ 0.063 & 150.9 $\pm$ 37.7 \\
+fedavg\_zeropad[inception] & 0.385 $\pm$ 0.062 & 0.164 $\pm$ 0.048 & 106.9 $\pm$ 22.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- MotorImagery (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{MotorImagery: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_motorimagery_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.540 & 0.480 & 1257.6 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.522 $\pm$ 0.027 & 0.411 $\pm$ 0.100 & 1033.2 $\pm$ 37.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- MotorImagery (single_family) ---
+\begin{table}[t]
+\centering
+\caption{MotorImagery: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_motorimagery_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[resnet1d] & 0.550 $\pm$ 0.067 & 0.532 $\pm$ 0.097 & 48.8 $\pm$ 8.1 \\
+fedavg\_zeropad[resnet1d] & 0.536 $\pm$ 0.033 & 0.449 $\pm$ 0.106 & 44.9 $\pm$ 7.2 \\
+fedavg\_zeropad[inception] & 0.514 $\pm$ 0.043 & 0.377 $\pm$ 0.104 & 80.0 $\pm$ 17.8 \\
+drcif\_feddrcif & 0.508 $\pm$ 0.028 & 0.465 $\pm$ 0.051 & 898.8 $\pm$ 3.8 \\
+stc\_fedst & 0.508 $\pm$ 0.019 & 0.396 $\pm$ 0.072 & 197.1 $\pm$ 19.7 \\
+fedinception[inception] & 0.506 $\pm$ 0.027 & 0.446 $\pm$ 0.029 & 86.0 $\pm$ 30.2 \\
+arsenal\_fed2rc & 0.500 $\pm$ 0.000 & 0.333 $\pm$ 0.000 & 5.8 $\pm$ 0.1 \\
+tde\_feddict & 0.490 $\pm$ 0.000 & 0.329 $\pm$ 0.000 & 1043.9 $\pm$ 24.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- NATOPS (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{NATOPS: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_natops_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.967 & 0.966 & 49.1 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.928 $\pm$ 0.012 & 0.927 $\pm$ 0.012 & 67.1 $\pm$ 21.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- NATOPS (single_family) ---
+\begin{table}[t]
+\centering
+\caption{NATOPS: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_natops_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[inception] & 0.916 $\pm$ 0.017 & 0.914 $\pm$ 0.019 & 19.2 $\pm$ 5.2 \\
+arsenal\_fed2rc & 0.892 $\pm$ 0.017 & 0.888 $\pm$ 0.018 & 2.1 $\pm$ 0.2 \\
+fedinception[resnet1d] & 0.880 $\pm$ 0.035 & 0.877 $\pm$ 0.034 & 14.1 $\pm$ 3.4 \\
+stc\_fedst & 0.863 $\pm$ 0.015 & 0.863 $\pm$ 0.014 & 10.4 $\pm$ 0.4 \\
+drcif\_feddrcif & 0.860 $\pm$ 0.016 & 0.859 $\pm$ 0.017 & 15.3 $\pm$ 0.1 \\
+tde\_feddict & 0.833 $\pm$ 0.000 & 0.833 $\pm$ 0.000 & 6.4 $\pm$ 0.2 \\
+fedavg\_zeropad[inception] & 0.827 $\pm$ 0.021 & 0.815 $\pm$ 0.029 & 15.3 $\pm$ 6.7 \\
+fedavg\_zeropad[resnet1d] & 0.818 $\pm$ 0.011 & 0.793 $\pm$ 0.021 & 13.3 $\pm$ 2.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- PEMS-SF (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{PEMS-SF: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_pems-sf_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.952 $\pm$ 0.023 & 0.951 $\pm$ 0.024 & 296.5 $\pm$ 10.1 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.931 & 0.931 & 310.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- PEMS-SF (single_family) ---
+\begin{table}[t]
+\centering
+\caption{PEMS-SF: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_pems-sf_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.986 $\pm$ 0.012 & 0.986 $\pm$ 0.012 & 38.8 $\pm$ 0.5 \\
+tde\_feddict & 0.977 $\pm$ 0.000 & 0.977 $\pm$ 0.000 & 1248.5 $\pm$ 14.1 \\
+arsenal\_fed2rc & 0.769 $\pm$ 0.007 & 0.757 $\pm$ 0.011 & 3.9 $\pm$ 0.2 \\
+fedinception[resnet1d] & 0.726 $\pm$ 0.037 & 0.719 $\pm$ 0.039 & 23.3 $\pm$ 6.0 \\
+fedinception[inception] & 0.702 $\pm$ 0.046 & 0.693 $\pm$ 0.052 & 18.7 $\pm$ 2.5 \\
+stc\_fedst & 0.565 $\pm$ 0.082 & 0.544 $\pm$ 0.086 & 223.5 $\pm$ 6.8 \\
+fedavg\_zeropad[inception] & 0.160 $\pm$ 0.005 & 0.045 $\pm$ 0.009 & 18.4 $\pm$ 0.9 \\
+fedavg\_zeropad[resnet1d] & 0.147 $\pm$ 0.029 & 0.051 $\pm$ 0.018 & 17.2 $\pm$ 1.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- PhonemeSpectra (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{PhonemeSpectra: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_phonemespectra_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.316 & 0.308 & 1443.9 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.302 $\pm$ 0.008 & 0.288 $\pm$ 0.007 & 1429.8 $\pm$ 154.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- PhonemeSpectra (single_family) ---
+\begin{table}[t]
+\centering
+\caption{PhonemeSpectra: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_phonemespectra_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.267 $\pm$ 0.008 & 0.262 $\pm$ 0.008 & 885.1 $\pm$ 7.8 \\
+fedinception[inception] & 0.257 $\pm$ 0.015 & 0.239 $\pm$ 0.019 & 661.6 $\pm$ 119.3 \\
+arsenal\_fed2rc & 0.229 $\pm$ 0.002 & 0.213 $\pm$ 0.003 & 5.9 $\pm$ 0.2 \\
+stc\_fedst & 0.159 $\pm$ 0.015 & 0.137 $\pm$ 0.015 & 244.1 $\pm$ 1.6 \\
+tde\_feddict & 0.077 $\pm$ 0.000 & 0.070 $\pm$ 0.000 & 338.2 $\pm$ 10.6 \\
+fedinception[resnet1d] & 0.077 $\pm$ 0.046 & 0.042 $\pm$ 0.047 & 757.7 $\pm$ 271.7 \\
+fedavg\_zeropad[resnet1d] & 0.031 $\pm$ 0.008 & 0.004 $\pm$ 0.003 & 175.9 $\pm$ 2.3 \\
+fedavg\_zeropad[inception] & 0.024 $\pm$ 0.012 & 0.004 $\pm$ 0.002 & 194.0 $\pm$ 9.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- RacketSports (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{RacketSports: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_racketsports_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.883 $\pm$ 0.012 & 0.892 $\pm$ 0.012 & 36.7 $\pm$ 7.2 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.842 & 0.855 & 34.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- RacketSports (single_family) ---
+\begin{table}[t]
+\centering
+\caption{RacketSports: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_racketsports_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.887 $\pm$ 0.012 & 0.894 $\pm$ 0.011 & 10.3 $\pm$ 0.1 \\
+fedinception[inception] & 0.871 $\pm$ 0.029 & 0.881 $\pm$ 0.026 & 14.6 $\pm$ 1.6 \\
+arsenal\_fed2rc & 0.837 $\pm$ 0.020 & 0.842 $\pm$ 0.020 & 2.3 $\pm$ 0.2 \\
+tde\_feddict & 0.829 $\pm$ 0.000 & 0.837 $\pm$ 0.000 & 0.8 $\pm$ 0.0 \\
+stc\_fedst & 0.825 $\pm$ 0.014 & 0.834 $\pm$ 0.013 & 1.8 $\pm$ 0.1 \\
+fedinception[resnet1d] & 0.776 $\pm$ 0.031 & 0.787 $\pm$ 0.029 & 14.5 $\pm$ 4.0 \\
+fedavg\_zeropad[inception] & 0.707 $\pm$ 0.067 & 0.698 $\pm$ 0.073 & 21.1 $\pm$ 3.6 \\
+fedavg\_zeropad[resnet1d] & 0.346 $\pm$ 0.030 & 0.268 $\pm$ 0.046 & 12.1 $\pm$ 0.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- SelfRegulationSCP1 (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{SelfRegulationSCP1: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_selfregulationscp1_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.887 & 0.887 & 492.8 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.871 $\pm$ 0.013 & 0.870 $\pm$ 0.013 & 487.5 $\pm$ 30.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- SelfRegulationSCP1 (single_family) ---
+\begin{table}[t]
+\centering
+\caption{SelfRegulationSCP1: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_selfregulationscp1_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedavg\_zeropad[inception] & 0.861 $\pm$ 0.008 & 0.861 $\pm$ 0.008 & 31.0 $\pm$ 5.3 \\
+drcif\_feddrcif & 0.855 $\pm$ 0.010 & 0.853 $\pm$ 0.011 & 211.7 $\pm$ 1.4 \\
+fedavg\_zeropad[resnet1d] & 0.844 $\pm$ 0.013 & 0.844 $\pm$ 0.014 & 17.2 $\pm$ 2.1 \\
+stc\_fedst & 0.815 $\pm$ 0.024 & 0.815 $\pm$ 0.025 & 246.5 $\pm$ 5.5 \\
+fedinception[resnet1d] & 0.808 $\pm$ 0.020 & 0.804 $\pm$ 0.020 & 34.2 $\pm$ 9.3 \\
+fedinception[inception] & 0.758 $\pm$ 0.040 & 0.745 $\pm$ 0.047 & 36.4 $\pm$ 8.1 \\
+arsenal\_fed2rc & 0.652 $\pm$ 0.009 & 0.651 $\pm$ 0.009 & 2.4 $\pm$ 0.1 \\
+tde\_feddict & 0.587 $\pm$ 0.000 & 0.537 $\pm$ 0.000 & 39.4 $\pm$ 0.7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- SelfRegulationSCP2 (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{SelfRegulationSCP2: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_selfregulationscp2_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.583 & 0.583 & 475.0 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.547 $\pm$ 0.021 & 0.545 $\pm$ 0.022 & 456.5 $\pm$ 6.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- SelfRegulationSCP2 (single_family) ---
+\begin{table}[t]
+\centering
+\caption{SelfRegulationSCP2: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_selfregulationscp2_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+tde\_feddict & 0.561 $\pm$ 0.000 & 0.561 $\pm$ 0.000 & 42.5 $\pm$ 0.6 \\
+stc\_fedst & 0.522 $\pm$ 0.014 & 0.521 $\pm$ 0.014 & 230.6 $\pm$ 3.1 \\
+drcif\_feddrcif & 0.519 $\pm$ 0.021 & 0.515 $\pm$ 0.020 & 214.7 $\pm$ 0.8 \\
+arsenal\_fed2rc & 0.518 $\pm$ 0.014 & 0.517 $\pm$ 0.015 & 2.5 $\pm$ 0.2 \\
+fedinception[resnet1d] & 0.518 $\pm$ 0.040 & 0.491 $\pm$ 0.054 & 17.0 $\pm$ 1.3 \\
+fedinception[inception] & 0.504 $\pm$ 0.049 & 0.483 $\pm$ 0.068 & 28.2 $\pm$ 7.0 \\
+fedavg\_zeropad[resnet1d] & 0.497 $\pm$ 0.028 & 0.387 $\pm$ 0.088 & 17.0 $\pm$ 3.8 \\
+fedavg\_zeropad[inception] & 0.474 $\pm$ 0.027 & 0.386 $\pm$ 0.042 & 26.0 $\pm$ 6.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- SpokenArabicDigits (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{SpokenArabicDigits: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_spokenarabicdigits_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.984 $\pm$ 0.003 & 0.985 $\pm$ 0.003 & 1666.7 $\pm$ 655.6 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.984 & 0.984 & 1069.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- SpokenArabicDigits (single_family) ---
+\begin{table}[t]
+\centering
+\caption{SpokenArabicDigits: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_spokenarabicdigits_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+fedinception[inception] & 0.984 $\pm$ 0.004 & 0.984 $\pm$ 0.004 & 498.6 $\pm$ 125.4 \\
+fedinception[resnet1d] & 0.980 $\pm$ 0.006 & 0.980 $\pm$ 0.006 & 446.1 $\pm$ 154.3 \\
+drcif\_feddrcif & 0.974 $\pm$ 0.002 & 0.974 $\pm$ 0.002 & 401.0 $\pm$ 3.5 \\
+stc\_fedst & 0.965 $\pm$ 0.003 & 0.965 $\pm$ 0.003 & 185.8 $\pm$ 0.8 \\
+fedavg\_zeropad[resnet1d] & 0.959 $\pm$ 0.009 & 0.958 $\pm$ 0.010 & 607.8 $\pm$ 85.8 \\
+hivecote2\_centralized & 0.946 $\pm$ 0.008 & 0.945 $\pm$ 0.008 & 18753.8 $\pm$ 384.8 \\
+fedavg\_zeropad[inception] & 0.945 $\pm$ 0.026 & 0.941 $\pm$ 0.031 & 594.0 $\pm$ 143.7 \\
+arsenal\_fed2rc & 0.938 $\pm$ 0.005 & 0.937 $\pm$ 0.005 & 4.8 $\pm$ 0.1 \\
+tde\_feddict & 0.782 $\pm$ 0.000 & 0.781 $\pm$ 0.000 & 229.1 $\pm$ 3.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- StandWalkJump (multi_family) ---
+\begin{table}[t]
+\centering
+\caption{StandWalkJump: multi-family / ensemble comparison (mean $\pm$ std over 5 seeds).}
+\label{tab:results_standwalkjump_ensemble}
+\begin{tabular}{lccc}
+\toprule
+Family combination & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.467 & 0.440 & 252.4 \\
+arsenal\_fed2rc+stc\_fedst+drcif\_feddrcif+fedinception & 0.393 $\pm$ 0.038 & 0.337 $\pm$ 0.046 & 242.2 $\pm$ 4.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% --- StandWalkJump (single_family) ---
+\begin{table}[t]
+\centering
+\caption{StandWalkJump: single-family ablation (mean $\pm$ std over 5 seeds).}
+\label{tab:results_standwalkjump_ablation}
+\begin{tabular}{lccc}
+\toprule
+Family & Test Accuracy & Test Macro-F1 & Time (s) \\
+\midrule
+drcif\_feddrcif & 0.400 $\pm$ 0.082 & 0.390 $\pm$ 0.069 & 111.5 $\pm$ 5.3 \\
+arsenal\_fed2rc & 0.373 $\pm$ 0.037 & 0.365 $\pm$ 0.028 & 2.3 $\pm$ 0.2 \\
+fedavg\_zeropad[resnet1d] & 0.347 $\pm$ 0.030 & 0.191 $\pm$ 0.054 & 4.7 $\pm$ 1.0 \\
+stc\_fedst & 0.347 $\pm$ 0.030 & 0.282 $\pm$ 0.040 & 131.8 $\pm$ 3.9 \\
+fedavg\_zeropad[inception] & 0.333 $\pm$ 0.000 & 0.181 $\pm$ 0.033 & 6.6 $\pm$ 2.4 \\
+tde\_feddict & 0.333 $\pm$ 0.000 & 0.303 $\pm$ 0.000 & 3.6 $\pm$ 0.1 \\
+fedinception[inception] & 0.307 $\pm$ 0.060 & 0.180 $\pm$ 0.034 & 7.3 $\pm$ 2.5 \\
+fedinception[resnet1d] & 0.213 $\pm$ 0.119 & 0.120 $\pm$ 0.050 & 5.0 $\pm$ 0.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
