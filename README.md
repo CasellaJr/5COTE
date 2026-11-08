@@ -27,11 +27,10 @@ Please cite as:
 ```
 
 # Abstract
-
+Time series classification (TSC) is increasingly performed on data that cannot be centralised, such as multivariate signals whose channels are held by different parties. We introduce 5COTE, an ensemble for vertical federated multivariate TSC that adapts the principles of the state-of-the-art HIVE-COTE2.0 (HC2.0) algorithm to a setting where clients hold different variables of the same samples. 5COTE trains independent federated models of different families (kernel-, shapelet-, interval-based, and a neural component trained with split learning), each with its own aggregation scheme, and combines their class probabilities with a federated accuracy-weighted ensemble (CAWPE). As part of it, we propose FedDrCIF, a federated version of DrCIF. On 22 UEA datasets, 5COTE obtains the best average rank among the federated families and results comparable to the centralised HC2.0, and it clearly outperforms a client working alone with its own variables. Its accuracy remains stable when the variables are distributed among up to 16 clients, at an increasing computational cost, and depends on how the variables are assigned to the clients.
 
 # Method
-<img width="" height="" alt="5COTE" src="TODO" />
-
+<img width="1004" height="1056" alt="5cote_method" src="https://github.com/user-attachments/assets/fe84210d-a6a5-446d-8b21-bbbfa31bff84" />
 
 ## Usage
 - Clone this repo.
